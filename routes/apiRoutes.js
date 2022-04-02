@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { append } = require("express/lib/response");
 const fs = require('fs');
 const { v4: uuidv4 } = require("uuid");
+const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
 
 // create a post route to add notes to the DB
 router.get('/notes', (req, res) => {
@@ -21,8 +22,6 @@ router.post('/notes', (req, res) => {
     const { title, text } = req.body;
     const newNote = { title, text, id: uuidv4() }
 
-    console.log(newNote);
-
     fs.readFile("./db/db.json", "utf8", (err, data) => {
         if (err) {
             console.error(err);
@@ -33,6 +32,7 @@ router.post('/notes', (req, res) => {
             parsedData.push(newNote);
             
             fs.writeFile("./db/db.json", JSON.stringify(parsedData), (err) => (err ? console.error(err) : console.log("Successfully added a note!")));
+            res.json(parsedData);
         }
     });
 
@@ -47,16 +47,14 @@ router.delete("/notes/:id", (req, res) => {
 
         fs.readFile("./db/db.json", "utf8", (err, data) => {
             if (err) {
-        
                 console.error(err);
             } else {
                 const parsedData = JSON.parse(data);
-                const deletedNoteIndex = parsedData.findIndex((note) => note.id === deletedNoteId);
-                const deletedNote = parsedData[deletedNoteIndex];
                 
-                parsedData.pop(deletedNote);
+                const filteredArray = parsedData.filter(note => note.id !== deletedNoteId);
                 
-                fs.writeFile("./db/db.json", JSON.stringify(parsedData), (err) => (err ? console.error(err) : console.log("Successfully deleted a note!")));
+                fs.writeFile("./db/db.json", JSON.stringify(filteredArray), (err) => (err ? console.error(err) : console.log("Successfully deleted a note!")));
+                res.json(parsedData);
             }
         });
     }
