@@ -1,6 +1,6 @@
 # Note Taker 📝
 
-## Description 
+## Description 📃
 
 This repo/code gives a user the ability to Take, Save, and Delete Notes. Running node, express, and utils. Feel free to navigate through the code and test run the Webpage itself. Each note created and saved is information stored in the database within the code. The database then sends this information to display onto the HTML file that handles the notes.
 
@@ -12,7 +12,7 @@ This repo/code gives a user the ability to Take, Save, and Delete Notes. Running
 * Below is an image preview 
 ![Note Taker Express](./images/Note_Taker-app.png)
 
-## Link 🖊️
+## Links 🖊️
 
 * Here is the link to my github 🐈‍⬛: [Github/JMGuzman-784](https://github.com/JMGuzman-784/hw11)
 
