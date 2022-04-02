@@ -1,19 +1,21 @@
-# Team Profile Generator
+# Note Taker 📝
 
-## Description
+## Description 
 
-This repo/code has the ability for the user to generate a Team Profile. User would need to run code by entering "Node index.js" or name of server or file, inside of integrated terminal. Each profile includes Email, Id, and also varies from employee, meaning it would ask either a github username or school depending on employee.  
+This repo/code gives a user the ability to Take, Save, and Delete Notes. Running node, express, and utils. Feel free to navigate through the code and test run the Webpage itself. Each note created and saved is information stored in the database within the code. The database then sends this information to display onto the HTML file that handles the notes.
 
 ## Preview
 
 * To view how to run the code below is a YouTube Video walktrough.
-[Team Profile Generator](https://www.youtube.com/watch?v=Qfh0r-xA6_4)
+[Note Taker APP](https://www.youtube.com/watch?v=Qfh0r-xA6_4)
 
 * Below is an image preview 
-![Team Profile Generator](./sources/images/hw10_preview.png)
+![Note Taker Express](./images/Note_Taker-app.png)
 
-## Link to Code
+## Link 🖊️
 
-* Here is the link to my github : [Github/JMGuzman-784](https://github.com/JMGuzman-784/hw10)
+* Here is the link to my github 🐈‍⬛: [Github/JMGuzman-784](https://github.com/JMGuzman-784/hw11)
 
-* Here is the code : [JMGuzman-784/Team-Gen](https://github.com/JMGuzman-784/hw10/blob/master/index.js)
+* Here is the link to the webpage 🖥️: [JMGuzman-784/Team-Gen](https://app-4-taking-notes.herokuapp.com/)
+
+* Here is the code 📜: [JMGuzman-784/Team-Gen](https://github.com/JMGuzman-784/hw11/blob/main/server.js)
