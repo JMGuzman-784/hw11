@@ -16,6 +16,6 @@ This repo/code gives a user the ability to Take, Save, and Delete Notes. Running
 
 * Here is the link to my github 🐈‍⬛: [Github/JMGuzman-784](https://github.com/JMGuzman-784/hw11)
 
-* Here is the link to the webpage 🖥️: [JMGuzman-784/Team-Gen](https://app-4-taking-notes.herokuapp.com/)
+* Here is the link to the webpage 🖥️: [JMGuzman-784/Note-Taker](https://app-4-taking-notes.herokuapp.com/)
 
-* Here is the code 📜: [JMGuzman-784/Team-Gen](https://github.com/JMGuzman-784/hw11/blob/main/server.js)
+* Here is the code 📜: [JMGuzman-784/Note-Taker](https://github.com/JMGuzman-784/hw11/blob/main/server.js)
